@@ -1,0 +1,7 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+
+<div *ngFor="let fruit of fruits; index as i">
+  <a (click)="showFruit(fruit, i)">click to know the fruit</a>
+  <div id="{{ fruit + '' + i }}" class="hidden">{{ fruit }}</div>
+</div>
